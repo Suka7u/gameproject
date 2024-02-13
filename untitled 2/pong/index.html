@@ -1,0 +1,19 @@
+<!-- The main file for playing the pong game. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="/engine/engine.css" rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="canv"></canvas>
+    <script type="module">
+        import "/engine/engine.js"
+        import "./pong.js"
+        SceneManager.setScenes(allScenes)
+        start("Pong", {aspectRatio:1,logicalWidth:300,letterboxColor:"gray"})
+    </script>
+</body>
+
+</html>

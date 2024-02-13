@@ -1,0 +1,19 @@
+<!-- The main file for playing our example game. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="/engine/engine.css" rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="canv"></canvas>
+    <script type="module">
+        import "/engine/engine.js"
+        import scene from "./mole.js"
+        SceneManager.addScene(scene);
+        start("Mole")
+    </script>
+</body>
+
+</html>
