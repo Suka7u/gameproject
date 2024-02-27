@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="/engine/engine.css" rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="canv"></canvas>
+    <script type="module">
+        import "/engine/engine.js"
+        import sampleScene from "./sample.js"
+        SceneManager.addScene(sampleScene);
+        start("Sample", {aspectRatio:1,letterboxColor:"black"})
+    </script>
+</body>
+
+</html>
